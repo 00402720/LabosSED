@@ -1,0 +1,17 @@
+    1  gpg --full-gen-key
+    2  gpg --list-keys
+    3  gpg --list-secret-keys
+    4  gpg --output testDocKey --export 01820B5D01B77A7BC4166A1D13E27954E096CC67
+    5  gpg --armor --output testDocKey.asc --export 01820B5D01B77A7BC4166A1D13E27954E096CC67
+    6  gpg --output my_rev_cert.asc --gen-revoke 01820B5D01B77A7BC4166A1D13E27954E096CC67
+    7  ls
+    8  git status
+    9  git clone https://github.com/Pyload901/llaves.git
+   10  ls
+   11  gpg --import llaves/marioKey.asc
+   12  gpg --list-keys
+   13  gpg --edit-key 33F4569E80743494764E0A0E4DBE7A2392292F92
+   14  touch history.txt
+   15  ls
+   16  history
+   17  history > history.txt
